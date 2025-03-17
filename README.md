@@ -1,2 +1,2 @@
 # learning-rust
-This repository is dedicated for learning rust. Do NOT expect any working code here.
+This repository is dedicated to learning the basics of rust.
