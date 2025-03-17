@@ -84,9 +84,43 @@ fn main(){
     let opravneni = if vek >= 18 { "Dospělý "} else { "Nezletilý" };
 
     println!("Jsi {}", opravneni);
+
+    // nekonecny cyklus loop
+
+    let mut pocitadlo = 0;
+
+    loop{
+        pocitadlo += 1;
+
+        if pocitadlo == 7{
+            break; // ukonceni cyklu
+        }
+        println!("počet: {}", pocitadlo);
+
+    }
+
+    let h = loop{
+      let cis = 5;
+
+      break cis * 2; // break vraci hodnotu
+
+    };
+
+    println!("vystup z break je: {}", h);
+
+    // cyklus while
+    let mut b = 10;
+
+    while b < 20{
+        b += 1;
+        println!("číslo: {}", b);
+    }
+
+    // for loop
+
+    for i in 1..5{
+        println!("i je: {}", i);
+    }
     
-
-
-
 
 }
