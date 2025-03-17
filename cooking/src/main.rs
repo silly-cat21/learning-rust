@@ -117,10 +117,10 @@ fn main(){
     }
 
     // for loop
-
     for i in 1..5{
         println!("i je: {}", i);
     }
-    
+    // test
+    let date = 1;
 
 }
