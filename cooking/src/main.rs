@@ -121,4 +121,43 @@ fn main(){
         println!("i je: {}", i);
     }
 
+     //staticky pole
+
+     let pole: [i32; 5] = [10, 30, 20, 2, 0]; // strednik pro datoveho typu a velikosti
+
+     println!("prvni cislo v poli je: {}", pole[0]); // vypsani z pole
+     println!("posledni cislo v poli je: {}", pole[4]);
+ 
+     // vektory, muzou byt mutable
+ 
+     let mut vektor = vec![6, 28, 80, 72]; // vytvoreni vektoru
+     vektor.push(8); // prida k vektoru nakonec hodnotu
+ 
+     vektor.pop(); //odebere posledni prvek z vektoru
+     
+     println!("delka vektoru je: {}", vektor.len());
+ 
+     vektor.remove(0); // odstraneni nulteho indexu
+     println!("po odstraneni indexu 1 je delka {}", vektor.len());
+ 
+     println!("obsah vektoru po pridani hodnoty je: {:?}", vektor); // vypsani celeho vektoru
+ 
+     // iterace ve vektoru
+ 
+     for f in vektor{
+         println!("číslo je: {}", f);
+     }
+
+    // retezce (string)
+
+    let text = "ahoj svete"; // tohle je nezmenitelny string &str
+    println!("{}", text);
+
+    // string (zmenitelny)
+
+    let text1 = "ahoj"; // &str
+    let prevedeni = String::from(text1);
+    println!("vypis prevedeneho stringu je {}", prevedeni);
+
+ 
 }
